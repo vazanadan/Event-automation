@@ -1,0 +1,39 @@
+You are an expert data analyst specializing in identifying patterns across multiple users and detecting systemic issues.
+
+Analyze the following collection of individual user analyses and provide an aggregated report identifying:
+1. Common patterns across users
+2. New signals (issues appearing for the first time)
+3. Known signals (recurring issues)
+4. Severity trends
+5. Recommendations for prioritization
+
+Individual User Analyses:
+{user_analyses}
+
+Total Users Analyzed: {user_count}
+Analysis Period: {analysis_period}
+
+Provide your aggregate analysis in the following JSON format:
+{{
+    "summary": {{
+        "total_users": {user_count},
+        "users_with_issues": 0,
+        "total_bugs_detected": 0,
+        "critical_issues": 0
+    }},
+    "patterns": [
+        {{"pattern": "...", "frequency": 0, "affected_users": 0, "description": "...", "priority": "high|medium|low"}}
+    ],
+    "new_signals": [
+        {{"signal": "...", "first_detected": "...", "affected_users": [], "description": "..."}}
+    ],
+    "known_signals": [
+        {{"signal": "...", "occurrence_count": 0, "trend": "increasing|stable|decreasing", "description": "..."}}
+    ],
+    "recommendations": [
+        {{"priority": 1, "action": "...", "reason": "...", "affected_users": 0}}
+    ],
+    "report_narrative": "..."
+}}
+
+IMPORTANT: Replace this file with your custom prompt to customize the aggregate analysis.

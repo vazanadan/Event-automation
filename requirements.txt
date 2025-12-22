@@ -1,0 +1,26 @@
+# BigQuery
+google-cloud-bigquery>=3.14.0
+google-auth>=2.25.0
+
+# Mixpanel
+mixpanel-api>=1.2.0
+requests>=2.31.0
+
+# AI Analysis
+anthropic>=0.40.0
+
+# Email
+google-auth-oauthlib>=1.2.0
+google-api-python-client>=2.111.0
+
+# Scheduling
+schedule>=1.2.1
+python-crontab>=3.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pandas>=2.1.0
+pytz>=2024.1
+
+# Logging and monitoring
+structlog>=24.1.0
